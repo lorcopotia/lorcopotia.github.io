@@ -1,4 +1,7 @@
 title: IT neighboor
 logo: 
 description: DevOps Engineer | todo lo demás
+show_downloads: false
+google_analytics:
+url: "https://lorcopotia.github.io"
 theme: jekyll-theme-minimal
