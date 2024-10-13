@@ -29,37 +29,19 @@ RUN apt-get -y install git \
     autoconf \
     bison \
     build-essential \
-    libssl-dev \
-    libyaml-dev \
-    libreadline6-dev \
+    ruby-full \
+    build-essential \
     zlib1g-dev \
-    libncurses5-dev \
-    libffi-dev \
-    libgdbm6 \
-    libgdbm-dev \
-    libdb-dev \
     apt-utils
-    
-# "#################################################"
-# "GitHub Pages/Jekyll is based on Ruby. Set the version and path"
-# "As of this writing, use Ruby 3.1.2
-# "Based on: https://talk.jekyllrb.com/t/liquid-4-0-3-tainted/7946/12"
-ENV RBENV_ROOT /usr/local/src/rbenv
-ENV RUBY_VERSION 3.3.4
-ENV PATH ${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:$PATH
 
-# "#################################################"
-# "Install rbenv to manage Ruby versions"
-RUN git clone https://github.com/rbenv/rbenv.git ${RBENV_ROOT} \
-  && git clone https://github.com/rbenv/ruby-build.git \
-    ${RBENV_ROOT}/plugins/ruby-build \
-  && ${RBENV_ROOT}/plugins/ruby-build/install.sh \
-  && echo 'eval "$(rbenv init -)"' >> /etc/profile.d/rbenv.sh
-
-# "#################################################"
-# "Install ruby and set the global version"
-RUN rbenv install ${RUBY_VERSION} \
-  && rbenv global ${RUBY_VERSION}
+# Avoid installing RubyGems packages (called gems) as the root user. Instead, set up a gem 
+# installation directory for your user account. The following commands will add environment 
+# variables to your ~/.bashrc file to configure the gem installation path:
+     
+RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+RUN echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+RUN echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+RUN source ~/.bashrc
 
 # "#################################################"
 # "Install the version of Jekyll that GitHub Pages supports"
@@ -67,4 +49,4 @@ RUN rbenv install ${RUBY_VERSION} \
 # "Note: If you always want the latest 3.9.x version,"
 # "       use this line instead:"
 # "       RUN gem install jekyll -v '~>3.9'"
-RUN gem install jekyll -v '3.10.0'
+RUN gem install jekyll -v '~>3.10'
