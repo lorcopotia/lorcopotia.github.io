@@ -14,10 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: IT neighboor
-<<<<<<< HEAD
 logo: /assets/images/picofme.png
 description: DevOps Engineer | todo lo demás
-=======
+
 # email: your-email@example.com
 logo: /assets/images/picofme.png
 description: >- # this means to ignore newlines until "baseurl:"
@@ -27,7 +26,6 @@ url: "https://lorcopotia.github.io"
 twitter_username: DuniX33
 github_username:  lorcopotia
 
->>>>>>> 12af859 (New files)
 show_downloads: false
 google_analytics:
 
