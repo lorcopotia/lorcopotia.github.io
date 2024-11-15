@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | IT Neighbor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1><a href="{{ "/" | relative_url }}">IT Neighbor</a></h1>
-    </header>
 
-    <main>
-        {{ content }}
-    </main>
+<header>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</header>
 
-    <footer>
-        <p>&copy; 2024 IT neighbor</p>
-    </footer>
+<main role="main">
+  {{ content }}
+</main>
+
+<footer>
+  <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

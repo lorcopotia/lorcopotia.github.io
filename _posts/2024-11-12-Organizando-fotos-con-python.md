@@ -1,3 +1,9 @@
+---
+layout: post
+title: Organizando fotos con Python
+date: 2024-11-12
+---
+
 # El poder de Python: Automatiza tu mundo
 
 ¿Te imaginas poder controlar tu computadora, tus servidores, ¡incluso tu casa inteligente con solo unas líneas de código? Eso es lo que puedes lograr aprendiendo Python, un lenguaje de programación versátil y poderoso que está conquistando el mundo.

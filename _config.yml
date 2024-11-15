@@ -19,10 +19,13 @@ description: DevOps Engineer | todo lo demás
 
 # email: your-email@example.com
 logo: /assets/images/picofme.png
-description: >- # this means to ignore newlines until "baseurl:"
-  DevOps Engineer, SysAdmin, Gamer y filósofo de la vida.
+
+# this means to ignore newlines until "baseurl:"
+description: DevOps Engineer, SysAdmin, Gamer y filósofo de la vida.
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lorcopotia.github.io"
+permalink: /posts/:title/
+
 twitter_username: DuniX33
 github_username:  lorcopotia
 linkedin_username:  lorcopotia
