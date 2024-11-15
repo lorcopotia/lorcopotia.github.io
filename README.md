@@ -1,16 +1,22 @@
-## Hi there 👋
+# Welcome to My Blog | Bienvenidos | Benvenuti 👋
 
-<!--
-**lorcopotia/lorcopotia** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🌟 About Me
+DevOps Engineer, SysAdmin, and lifelong learner exploring technology one post at a time.
 
-Here are some ideas to get you started:
+### 🛠 Technologies & Skills
+- **Languages**: Python, Bash, etc.
+- **Tools**: Docker, GitHub Actions, etc.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📫 Connect with Me
+- [LinkedIn](https://linkedin.com/in/yourprofile)
+- [Twitter](https://twitter.com/yourhandle)
+
+### 📄 Recent Posts
+{% for post in site.posts %}
+- **[{{ post.title }}]({{ post.url }})** - _{{ post.date | date: "%b %d, %Y" }}_
+{% endfor %}
+
+---
+<footer align="center">
+  © 2024 IT Neighbor | [GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile) | [Twitter](https://twitter.com/yourhandle)
+</footer>
