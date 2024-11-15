@@ -1,40 +1,47 @@
-/* Estilo general */
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    display: flex;
-    justify-content: center;
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
 /* Sidebar/Profile Styles */
 .profile {
-    width: 250px;
+    width: 220px;
     margin-right: 20px;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex-shrink: 0;
 }
 
 .profile-photo {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
 .profile h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 10px;
     color: #333;
 }
 
 .profile p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #666;
 }
 
@@ -55,11 +62,12 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 header p {
     font-size: 1.1em;
+    margin-top: 10px;
 }
 
 /* Blog Posts Section */
@@ -75,6 +83,7 @@ header p {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 #posts ul {
@@ -98,6 +107,7 @@ header p {
 #posts span {
     font-size: 0.9em;
     color: #666;
+    margin-right: 10px;
 }
 
 /* Footer Styles */
@@ -108,6 +118,7 @@ footer {
     color: #fff;
     margin-top: 40px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .footer-content {
