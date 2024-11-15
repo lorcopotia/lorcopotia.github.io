@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Neighbor | Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar/Profile Section -->
+    <aside class="profile">
+        <img src="assets/images/picofme.png" alt="Profile Picture">
+        <h1>IT Neighbor</h1>
+        <p>Desarrollador web y amante del café</p>
+    </aside>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Bienvenido al Blog de IT Neighbor</h2>
+        <p>Este es el lugar donde compartiré mis pensamientos, conocimientos y experiencias en desarrollo web.</p>
+
+        <!-- Posts List -->
+        {% for post in site.posts %}
+        <article>
+            <h3>{{ post.title }}</h3>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            <a href="{{ post.url }}">Leer más...</a>
+        </article>
+        {% endfor %}
+    </main>
+</div>
+
+</body>
+</html>

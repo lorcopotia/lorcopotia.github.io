@@ -1,4 +1,4 @@
-/* Reset de estilos básicos */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,133 +7,100 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f9;
     color: #333;
-    background-color: #f4f4f4;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center; /* Agrega esta línea */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Sidebar/Profile Styles */
+/* Profile Section */
 .profile {
-    width: 220px;
-    margin-right: 20px;
-    padding: 30px;
-    background: #fff;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
 }
 
-.profile-photo {
-    width: 80%;
+.profile img {
+    max-width: 100%;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.profile h2 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    color: #333;
+.profile h1 {
+    font-size: 24px;
+    color: #007acc;
+    margin-bottom: 5px;
 }
 
 .profile p {
-    font-size: 0.9em;
+    font-size: 16px;
     color: #666;
 }
 
-/* Main Content Styles */
-.main-content {
-    max-width: 800px;
-    width: 100%;
-    padding: 30px;
-    flex-grow: 1;
-}
-
-/* Header Styles */
-header {
-    text-align: center;
-    margin-bottom: 30px;
+/* Main Content Section */
+main {
+    background-color: #fff;
     padding: 20px;
-    background: #333;
-    color: #fff;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
 }
 
-header h1 {
-    font-size: 1.8em;
+main h2 {
+    font-size: 28px;
+    color: #007acc;
+    margin-bottom: 15px;
 }
 
-header p {
-    font-size: 1.1em;
-    margin-top: 10px;
-}
-
-/* Blog Posts Section */
-#posts {
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+main p {
+    font-size: 16px;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-#posts h2 {
-    text-align: center;
-    color: #333;
+/* Post List */
+article {
     margin-bottom: 20px;
-    font-size: 1.5em;
 }
 
-#posts ul {
-    list-style-type: none;
+article h3 {
+    font-size: 24px;
+    color: #007acc;
+    margin-bottom: 5px;
 }
 
-#posts li {
-    margin: 15px 0;
-    font-size: 1.1em;
+article time {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
 }
 
-#posts a {
+article a {
     text-decoration: none;
     color: #007acc;
 }
 
-#posts a:hover {
+article a:hover {
     color: #005f99;
-}
-
-#posts span {
-    font-size: 0.9em;
-    color: #666;
-    margin-right: 10px;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background-color: #333;
     color: #fff;
     margin-top: 40px;
     border-radius: 5px;
     width: 100%;
-}
-
-.footer-content {
-    margin-bottom: 10px;
-}
-
-.footer-content .social-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.footer-content .social-links a:hover {
-    text-decoration: underline;
 }
