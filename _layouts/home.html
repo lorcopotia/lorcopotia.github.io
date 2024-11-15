@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="home">
+    <section class="hero">
+        <h1>Bienvenido a {{ site.title }}</h1>
+        <p>Explora las últimas noticias y análisis del mundo de la tecnología</p>
+    </section>
+
+    <section class="posts">
+        <h2>Últimos Artículos</h2>
+        <div class="post-grid">
+            {% for post in paginator.posts %}
+            <article class="post-card">
+                {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
+                {% endif %}
+                <div class="post-content">
+                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                    <div class="post-meta">
+                        <time>{{ post.date | date: "%d/%m/%Y" }}</time>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Anterior</a>
+            {% endif %}
+            
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}">Siguiente &raquo;</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </section>
+</div>

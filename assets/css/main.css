@@ -1,0 +1,159 @@
+---
+---
+// Variables
+$primary-color: #2563eb;
+$text-color: #1f2937;
+$bg-color: #f9fafb;
+$header-bg: #ffffff;
+$border-color: #e5e7eb;
+
+// Reset & Base styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background: $bg-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+// Header
+.site-header {
+    background: $header-bg;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        a {
+            margin-left: 1.5rem;
+            color: $text-color;
+            text-decoration: none;
+            
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// Hero section
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: lighten($text-color, 20%);
+    }
+}
+
+// Post grid
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.post-card {
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    .post-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .post-content {
+        padding: 1.5rem;
+
+        h3 {
+            margin-bottom: 0.5rem;
+            
+            a {
+                color: $text-color;
+                text-decoration: none;
+                
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+// Single post
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    .post-header {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .post-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .post-meta {
+        color: lighten($text-color, 30%);
+        margin-bottom: 1rem;
+    }
+
+    .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        
+        .tag {
+            background: lighten($primary-color, 35%);
+            color: $primary-color;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+        }
+    }
+}
+
+// Footer
+.site-footer {
+    background: $header-bg;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    color: lighten($text-color, 30%);
+}
