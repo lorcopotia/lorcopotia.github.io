@@ -13,7 +13,7 @@
         <aside class="profile-sidebar">
             <div class="profile-container">
                 <img src="{{ '/assets/images/picofme.png' | relative_url }}" alt="Foto de perfil" class="profile-image">
-                <h2 class="profile-name">Tu Nombre</h2>
+                <h2 class="profile-name">{{ site.title }}</h2>
                 <p class="profile-bio">Editor en jefe de TechBlog. Apasionado por la tecnología y la innovación.</p>
                 <div class="profile-social">
                     <a href="https://twitter.com/yourusername">Twitter</a>
@@ -26,9 +26,8 @@
         <div class="main-content">
             <header class="site-header">
                 <nav class="container">
-                    <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
                     <div class="nav-links">
-                        <a href="{{ '/blog' | relative_url }}">Blog</a>
+                        <a href="{{ '/posts' | relative_url }}">Posts</a>
                         <a href="{{ '/about' | relative_url }}">Acerca de</a>
                     </div>
                 </nav>
