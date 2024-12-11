@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Organizando fotos con Python
+title: Métodos de Gestión de Secretos en Ansible
 date: 2024-12-11
 ---
 
