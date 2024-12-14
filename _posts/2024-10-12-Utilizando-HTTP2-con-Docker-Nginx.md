@@ -6,7 +6,7 @@ date: 2024-10-12
 
 # HTTP/2+Docker+Nginx
 
-La idea surgió por la nacesidad de [habilitar HTTP/2 en Openshift](https://docs.openshift.com/container-platform/4.14/networking/ingress-operator.html#nw-http2-haproxy_configuring-ingress) y de contar con una imagen que ya estuviese preparada para desplegar y poder validad que se esta utilizando el protocolo satisfactoriamente. En esta guía utilizaré Docker.
+La idea surgió por la necesidad de [habilitar HTTP/2 en Openshift](https://docs.openshift.com/container-platform/4.14/networking/ingress-operator.html#nw-http2-haproxy_configuring-ingress) y de contar con una imagen que ya estuviese preparada para desplegar y poder validad que se esta utilizando el protocolo satisfactoriamente. En esta guía utilizaré Docker.
 
 ## Pasos
 
