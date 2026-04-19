@@ -1,0 +1,154 @@
+{
+  "Meta": {
+    "title": "Duanel Garrido Milán · Ingeniero DevOps",
+    "description": "Ingeniero DevOps con 20 años de experiencia en Linux, Kubernetes, Openshift, Terraform, Ansible y nubes públicas."
+  },
+  "Nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "theme": "Cambiar tema",
+    "language": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "Hero": {
+    "greeting": "Hola, soy",
+    "name": "Duanel Garrido Milán",
+    "title": "Ingeniero DevOps Senior",
+    "tagline": "20 años construyendo, automatizando y operando infraestructura Linux, Kubernetes y cloud a escala.",
+    "location": "Barcelona, España",
+    "ctaContact": "Contactar",
+    "ctaResume": "Ver experiencia",
+    "avatarAlt": "Avatar con las iniciales de Duanel Garrido Mil\u00e1n"
+  },
+  "About": {
+    "label": "Sobre mí",
+    "title": "Perfil profesional",
+    "body": "Ingeniero DevOps con 20 años de experiencia en administración de sistemas Linux y software Open Source, así como en evolucionar y aprender nuevas tecnologías en proyectos complejos. Competencia profesional completa en inglés para proyectos y servicios internacionales. Especializado en despliegue, monitorización y resolución de problemas de aplicaciones en Openshift Container Platform y Kubernetes.",
+    "body2": "Destacada experiencia en creación y programación de tareas en Red Hat Ansible Tower, programación de backups y migraciones de aplicaciones, y scripting en Bash y Python. Experiencia con despliegue de recursos e infraestructura utilizando IaC (Bitbucket, Azure DevOps, TFE), tanto On-Prem como en nubes públicas.",
+    "facts": {
+      "years": "Años de experiencia",
+      "certs": "Certificaciones",
+      "clouds": "Nubes públicas",
+      "clustersLabel": "Clústeres gestionados",
+      "clustersValue": "K8s · Openshift"
+    },
+    "languagesLabel": "Idiomas",
+    "languages": {
+      "spanish": "Castellano · Lengua materna",
+      "english": "Inglés · B2",
+      "italian": "Italiano · A2"
+    }
+  },
+  "Experience": {
+    "label": "Trayectoria",
+    "title": "Experiencia profesional",
+    "subtitle": "Proyectos relevantes en DevOps, SysOps y administración de sistemas.",
+    "present": "Actualidad"
+  },
+  "Skills": {
+    "label": "Stack técnico",
+    "title": "Áreas de expertise",
+    "subtitle": "Herramientas y tecnologías con las que trabajo a diario.",
+    "groups": {
+      "platforms": "Plataformas & Orquestación",
+      "iac": "IaC & Automatización",
+      "cloud": "Cloud & Redes",
+      "scripting": "Scripting & CI/CD"
+    },
+    "certificationsLabel": "Certificaciones",
+    "certifications": {
+      "gcp": "GCP Professional Cloud Architect",
+      "cka": "Cloud Native Certified Kubernetes Administrator (CKA)",
+      "terraform": "Terraform Associate (002)",
+      "rhAnsible": "Red Hat Certified Specialist in Ansible Automation (en curso)",
+      "aplus": "CompTIA A+ Certified",
+      "linuxplus": "CompTIA Linux+ Certified",
+      "lpic": "LPIC-1 Linux Administrator"
+    }
+  },
+  "Projects": {
+    "label": "Proyectos",
+    "title": "Proyectos destacados",
+    "subtitle": "Una selección de trabajos representativos. Reemplázalos con tus propios casos de estudio.",
+    "placeholder": "Plantilla",
+    "viewCode": "Ver código",
+    "viewDemo": "Demo en vivo",
+    "items": {
+      "one": {
+        "title": "Plataforma Kubernetes multi-clúster",
+        "description": "Instalación y operación de clústeres Openshift 4.x on-premise (VMware) y en Azure, con observabilidad y backups automatizados.",
+        "tags": "Openshift, Kubernetes, Azure, VMware"
+      },
+      "two": {
+        "title": "Automatización con Ansible Tower",
+        "description": "Programación de tareas y despliegue de infraestructura con Ansible Tower: parcheo, backups, onboarding y runbooks operativos.",
+        "tags": "Ansible Tower, Python, Bash"
+      },
+      "three": {
+        "title": "Pipelines CI/CD en Azure DevOps",
+        "description": "Revisión de código, construcción de artefactos y pruebas automatizadas con SonarQube, agentes personalizados y GitHub Copilot.",
+        "tags": "Azure DevOps, SonarQube, Copilot"
+      },
+      "four": {
+        "title": "IaC con Terraform en nube pública",
+        "description": "Despliegue reproducible de redes, clústeres y servicios en GCP y Azure con Terraform, módulos reutilizables y revisión en PR.",
+        "tags": "Terraform, GCP, Azure, Bitbucket"
+      }
+    }
+  },
+  "Contact": {
+    "label": "Contacto",
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto de infraestructura, migración o automatización? Encantado de colaborar.",
+    "emailLabel": "Correo",
+    "phoneLabel": "Teléfono",
+    "locationLabel": "Ubicación",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "form": {
+      "title": "Envíame un mensaje",
+      "subtitle": "Se abrirá tu cliente de correo con el mensaje preparado.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Sobre qué quieres hablar?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame los detalles del proyecto o la consulta\u2026",
+      "send": "Enviar mensaje",
+      "privacy": "El botón abre tu cliente de correo. No se guarda ningún dato en el servidor."
+    }
+  },
+  "Blog": {
+    "label": "Blog",
+    "title": "Notas técnicas",
+    "subtitle": "Artículos sobre DevOps, Kubernetes, automatización y arquitectura cloud.",
+    "readMore": "Leer artículo",
+    "minRead": "min de lectura",
+    "backToBlog": "Volver al blog",
+    "publishedOn": "Publicado el",
+    "allPosts": "Todos los artículos",
+    "empty": "Todavía no hay artículos en este idioma."
+  },
+  "Footer": {
+    "tagline": "Ingeniero DevOps con base en Barcelona.",
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con Next.js y Tailwind CSS.",
+    "sections": {
+      "navigate": "Navegación",
+      "connect": "Conectar"
+    }
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "subtitle": "La página que buscas no existe o se ha movido.",
+    "back": "Volver al inicio"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "Meta": {
+    "title": "Duanel Garrido Milán · DevOps Engineer",
+    "description": "DevOps Engineer with 20 years of experience in Linux, Kubernetes, Openshift, Terraform, Ansible and public clouds."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "theme": "Toggle theme",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "greeting": "Hi, I\u2019m",
+    "name": "Duanel Garrido Milán",
+    "title": "Senior DevOps Engineer",
+    "tagline": "20 years building, automating and operating Linux, Kubernetes and cloud infrastructure at scale.",
+    "location": "Barcelona, Spain",
+    "ctaContact": "Get in touch",
+    "ctaResume": "View experience",
+    "avatarAlt": "Avatar with the initials of Duanel Garrido Mil\u00e1n"
+  },
+  "About": {
+    "label": "About me",
+    "title": "Professional profile",
+    "body": "DevOps Engineer with 20 years of experience in Linux systems administration and Open Source software, evolving and learning new technologies in complex projects. Full professional proficiency in English for international projects and services. Specialized in deployment, monitoring and troubleshooting of applications on Openshift Container Platform and Kubernetes.",
+    "body2": "Strong experience creating and scheduling tasks in Red Hat Ansible Tower, planning backups and application migrations, and Bash/Python scripting. Experience deploying resources and infrastructure using IaC (Bitbucket, Azure DevOps, TFE), both on-prem and on public clouds.",
+    "facts": {
+      "years": "Years of experience",
+      "certs": "Certifications",
+      "clouds": "Public clouds",
+      "clustersLabel": "Managed clusters",
+      "clustersValue": "K8s · Openshift"
+    },
+    "languagesLabel": "Languages",
+    "languages": {
+      "spanish": "Spanish · Native",
+      "english": "English · B2",
+      "italian": "Italian · A2"
+    }
+  },
+  "Experience": {
+    "label": "Journey",
+    "title": "Professional experience",
+    "subtitle": "Highlighted projects in DevOps, SysOps and systems administration.",
+    "present": "Present"
+  },
+  "Skills": {
+    "label": "Tech stack",
+    "title": "Areas of expertise",
+    "subtitle": "Tools and technologies I work with on a daily basis.",
+    "groups": {
+      "platforms": "Platforms & Orchestration",
+      "iac": "IaC & Automation",
+      "cloud": "Cloud & Networking",
+      "scripting": "Scripting & CI/CD"
+    },
+    "certificationsLabel": "Certifications",
+    "certifications": {
+      "gcp": "GCP Professional Cloud Architect",
+      "cka": "Cloud Native Certified Kubernetes Administrator (CKA)",
+      "terraform": "Terraform Associate (002)",
+      "rhAnsible": "Red Hat Certified Specialist in Ansible Automation (in progress)",
+      "aplus": "CompTIA A+ Certified",
+      "linuxplus": "CompTIA Linux+ Certified",
+      "lpic": "LPIC-1 Linux Administrator"
+    }
+  },
+  "Projects": {
+    "label": "Projects",
+    "title": "Featured projects",
+    "subtitle": "A selection of representative work. Replace these with your own case studies.",
+    "placeholder": "Template",
+    "viewCode": "View code",
+    "viewDemo": "Live demo",
+    "items": {
+      "one": {
+        "title": "Multi-cluster Kubernetes platform",
+        "description": "Installation and operation of Openshift 4.x clusters on-premise (VMware) and on Azure, with observability and automated backups.",
+        "tags": "Openshift, Kubernetes, Azure, VMware"
+      },
+      "two": {
+        "title": "Automation with Ansible Tower",
+        "description": "Task scheduling and infrastructure deployment with Ansible Tower: patching, backups, onboarding and operational runbooks.",
+        "tags": "Ansible Tower, Python, Bash"
+      },
+      "three": {
+        "title": "CI/CD pipelines on Azure DevOps",
+        "description": "Code review, artifact builds and automated tests with SonarQube, custom agents and GitHub Copilot.",
+        "tags": "Azure DevOps, SonarQube, Copilot"
+      },
+      "four": {
+        "title": "IaC with Terraform on public cloud",
+        "description": "Reproducible deployments of networks, clusters and services on GCP and Azure with Terraform, reusable modules and PR review.",
+        "tags": "Terraform, GCP, Azure, Bitbucket"
+      }
+    }
+  },
+  "Contact": {
+    "label": "Contact",
+    "title": "Let\u2019s talk",
+    "subtitle": "Got an infrastructure, migration or automation project? Happy to collaborate.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "form": {
+      "title": "Send me a message",
+      "subtitle": "Your email client will open with the message ready to send.",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to talk about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about the project or inquiry\u2026",
+      "send": "Send message",
+      "privacy": "The button opens your email client. No data is stored on the server."
+    }
+  },
+  "Blog": {
+    "label": "Blog",
+    "title": "Technical notes",
+    "subtitle": "Articles on DevOps, Kubernetes, automation and cloud architecture.",
+    "readMore": "Read article",
+    "minRead": "min read",
+    "backToBlog": "Back to blog",
+    "publishedOn": "Published on",
+    "allPosts": "All posts",
+    "empty": "No posts available in this language yet."
+  },
+  "Footer": {
+    "tagline": "DevOps Engineer based in Barcelona.",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js and Tailwind CSS.",
+    "sections": {
+      "navigate": "Navigation",
+      "connect": "Connect"
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "subtitle": "The page you are looking for doesn\u2019t exist or has been moved.",
+    "back": "Back to home"
+  }
+}

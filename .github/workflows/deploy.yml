@@ -1,0 +1,77 @@
+# Deploys the portfolio as a static site to GitHub Pages.
+#
+# Repo settings required (one-time):
+#   Settings → Pages → Build and deployment → Source = "GitHub Actions"
+#
+# No secrets are needed: the workflow uses the built-in GITHUB_TOKEN and the
+# `github-pages` OIDC identity provided by the deploy-pages action.
+#
+# The site is deployed to https://lorcopotia.github.io (user page, no basePath).
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build static site
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nextjs_space
+    env:
+      # Triggers `output: 'export'` in next.config.js
+      NEXT_OUTPUT_MODE: export
+      # Disable Next.js telemetry in CI
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'yarn'
+          cache-dependency-path: nextjs_space/yarn.lock
+
+      - name: Enable Corepack (Yarn 4)
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Build static site
+        run: yarn build
+
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: nextjs_space/out
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
