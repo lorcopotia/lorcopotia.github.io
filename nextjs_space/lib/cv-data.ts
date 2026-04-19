@@ -67,8 +67,8 @@ export const jobs: Job[] = [
       en: 'DevOps Engineer',
     },
     period: {
-      es: 'Julio 2020 — Agosto 2025',
-      en: 'July 2020 — August 2025',
+      es: 'Julio 2020 — Septiembre 2025',
+      en: 'July 2020 — September 2025',
     },
     bullets: {
       es: [
