@@ -10,7 +10,7 @@ const jakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-di
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  metadataBase: process.env.NEXTAUTH_URL ? new URL(process.env.NEXTAUTH_URL) : undefined,
+  metadataBase: new URL(process.env.NEXTAUTH_URL || 'https://lorcopotia.github.io'),
   title: {
     default: 'Duanel Garrido Milán · DevOps Engineer',
     template: '%s · Duanel Garrido Milán',
