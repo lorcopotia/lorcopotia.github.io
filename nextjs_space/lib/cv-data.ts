@@ -14,8 +14,7 @@ export const personal = {
     es: 'Barcelona, España',
     en: 'Barcelona, Spain',
   },
-  email: 'lorcopotia@hotmail.com',
-  phone: '+34 - NOT AVAILABLE',
+
   linkedin: 'https://www.linkedin.com/in/lorcopotia',
   github: 'https://github.com/lorcopotia',
   website: 'https://lorcopotia.github.io',

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { personal } from '@/lib/cv-data';
 import type { Locale } from '@/i18n/config';
@@ -75,14 +75,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
                 <Linkedin className="h-4 w-4" /> LinkedIn
               </a>
             </li>
-            <li>
-              <a
-                href={`mailto:${personal.email}`}
-                className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-              >
-                <Mail className="h-4 w-4" /> {personal.email}
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>
