@@ -1,9 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDown, Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { ArrowDown, Github, Linkedin, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { personal } from "@/lib/cv-data";
@@ -12,7 +11,6 @@ import type { Locale } from "@/i18n/config";
 export function HeroSection({ locale }: { locale: Locale }) {
   const t = useTranslations("Hero");
   const reduce = useReducedMotion();
-  const base = `/${locale}`;
 
   return (
     <section
@@ -50,16 +48,11 @@ export function HeroSection({ locale }: { locale: Locale }) {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Button asChild size="lg" className="shadow-sm">
-              <Link href={`${base}#contact`}>
-                <Mail className="mr-2 h-4 w-4" /> {t("ctaContact")}
-              </Link>
-            </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href={`${base}#experience`}>
+              <a href="#experience">
                 {t("ctaResume")}
                 <ArrowDown className="ml-2 h-4 w-4" />
-              </Link>
+              </a>
             </Button>
             <div className="flex items-center gap-1 pl-1">
               <Button variant="ghost" size="icon" asChild className="h-10 w-10">
