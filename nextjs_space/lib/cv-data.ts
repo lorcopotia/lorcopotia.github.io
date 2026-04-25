@@ -124,10 +124,10 @@ export const jobs: Job[] = [
   },
   {
     id: 'netgear',
-    company: 'Netgear',
+    company: 'Concentrix',
     role: {
-      es: 'L2 Network Support',
-      en: 'L2 Network Support',
+      es: 'Netgear L2 Network Support',
+      en: 'Netgear L2 Network Support',
     },
     period: {
       es: 'Julio 2018 — Abril 2019',
@@ -287,14 +287,14 @@ export const projects = [
   },
   {
     id: 'four',
-    tags: ['Terraform', 'GCP', 'Azure', 'Bitbucket'],
+    tags: ['Terraform', 'KVM', 'libvirt', 'Bitbucket'],
     codeUrl: 'https://github.com/lorcopotia/terraform-playground',
     demoUrl: null,
   },
   {
     id: 'five',
-    tags: ['Kubernetes', 'Go', 'OIDC', 'Identity'],
-    codeUrl: 'https://github.com/lorcopotia/kube-identity/',
+    tags: ['Kubernetes', 'RBAC', 'OIDC', 'Identity'],
+    codeUrl: 'https://lorcopotia.github.com/kube-identity/',
     demoUrl: null,
   },
 ] as const;
