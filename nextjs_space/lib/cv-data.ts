@@ -270,13 +270,13 @@ export const projects = [
   {
     id: 'one',
     tags: ['Openshift', 'Kubernetes', 'Azure', 'VMware'],
-    codeUrl: 'https://github.com/lorcopotia',
+    codeUrl: 'https://github.com/lorcopotia/kubernetes-playground',
     demoUrl: null,
   },
   {
     id: 'two',
     tags: ['Ansible Tower', 'Python', 'Bash'],
-    codeUrl: 'https://github.com/lorcopotia',
+    codeUrl: 'https://github.com/lorcopotia/ansible-playground',
     demoUrl: null,
   },
   {
@@ -288,7 +288,13 @@ export const projects = [
   {
     id: 'four',
     tags: ['Terraform', 'GCP', 'Azure', 'Bitbucket'],
-    codeUrl: 'https://github.com/lorcopotia',
+    codeUrl: 'https://github.com/lorcopotia/terraform-playground',
+    demoUrl: null,
+  },
+  {
+    id: 'five',
+    tags: ['Kubernetes', 'Go', 'OIDC', 'Identity'],
+    codeUrl: 'https://github.com/lorcopotia/kube-identity/',
     demoUrl: null,
   },
 ] as const;
