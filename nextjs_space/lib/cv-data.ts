@@ -294,7 +294,7 @@ export const projects = [
   {
     id: 'five',
     tags: ['Kubernetes', 'Go', 'OIDC', 'Identity'],
-    codeUrl: 'https://github.com/lorcopotia/kube-identity/',
+    codeUrl: 'https://lorcopotia.github.com/kube-identity/',
     demoUrl: null,
   },
 ] as const;
