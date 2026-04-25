@@ -287,13 +287,13 @@ export const projects = [
   },
   {
     id: 'four',
-    tags: ['Terraform', 'KVM', 'libvirt', 'Bitbucket'],
+    tags: ['Terraform', 'GCP', 'Azure', 'Bitbucket'],
     codeUrl: 'https://github.com/lorcopotia/terraform-playground',
     demoUrl: null,
   },
   {
     id: 'five',
-    tags: ['Kubernetes', 'RBAC', 'OIDC', 'Identity'],
+    tags: ['Kubernetes', 'Go', 'OIDC', 'Identity'],
     codeUrl: 'https://github.com/lorcopotia/kube-identity/',
     demoUrl: null,
   },
