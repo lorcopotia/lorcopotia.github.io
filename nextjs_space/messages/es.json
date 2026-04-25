@@ -99,6 +99,11 @@
         "title": "IaC con Terraform en nube pública",
         "description": "Despliegue reproducible de redes, clústeres y servicios en GCP y Azure con Terraform, módulos reutilizables y revisión en PR.",
         "tags": "Terraform, GCP, Azure, Bitbucket"
+      },
+      "five": {
+        "title": "kube-identity",
+        "description": "Proyecto de identidad enfocado en Kubernetes publicado en GitHub.",
+        "tags": "Kubernetes, Go, OIDC, Identity"
       }
     }
   },
