@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { ExternalLink, Code2, FolderGit2 } from 'lucide-react';
+import { ExternalLink, Code2, FolderGit2, ShieldCheck } from 'lucide-react';
 import { SectionReveal } from '@/components/section-reveal';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/lib/cv-data';
@@ -76,6 +76,14 @@ export function ProjectsSection({ locale }: { locale: Locale }) {
                       >
                         <ExternalLink className="mr-1.5 h-3.5 w-3.5" />
                         {t('viewDemo')}
+                      </a>
+                    </Button>
+                  )}
+                  {p.policyUrl && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={`/${locale}${p.policyUrl}`}>
+                        <ShieldCheck className="mr-1.5 h-3.5 w-3.5" />
+                        {t('viewPolicy')}
                       </a>
                     </Button>
                   )}

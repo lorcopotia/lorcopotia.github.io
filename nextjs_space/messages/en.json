@@ -79,6 +79,7 @@
     "placeholder": "Template",
     "viewCode": "View code",
     "viewDemo": "Live demo",
+    "viewPolicy": "Privacy policy",
     "items": {
       "one": {
         "title": "Multi-cluster Kubernetes platform",
@@ -104,6 +105,11 @@
         "title": "kube-identity",
         "description": "Kubernetes-focused identity project published on GitHub.",
         "tags": "Kubernetes, Go, OIDC, Identity"
+      },
+      "workout-tracker": {
+        "title": "Workout Tracker",
+        "description": "Android app built with Flutter to create and run exercise routines, with daily streaks, rewards and optional sync via Google Sign-In and Supabase.",
+        "tags": "Flutter, Dart, Supabase, Google Sign-In"
       }
     }
   },
@@ -141,6 +147,11 @@
     "publishedOn": "Published on",
     "allPosts": "All posts",
     "empty": "No posts available in this language yet."
+  },
+  "Legal": {
+    "backToHome": "Back to home",
+    "lastUpdated": "Last updated:",
+    "summaryLabel": "In one sentence"
   },
   "Footer": {
     "tagline": "DevOps Engineer based in Barcelona.",
