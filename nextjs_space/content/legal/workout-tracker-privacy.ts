@@ -1,6 +1,7 @@
 import type { LegalDoc } from '@/lib/legal';
 
 export const workoutTrackerPrivacyEs: LegalDoc = {
+  kind: 'markdown',
   slug: 'workout-tracker-privacy-policy',
   locale: 'es',
   appName: 'Workout Tracker',
@@ -70,7 +71,7 @@ Los datos sincronizados viajan cifrados en tránsito (HTTPS) y se almacenan en t
 
 Si nunca inicias sesión, tus datos existen solo en tu dispositivo y desaparecen si desinstalas la app o borras sus datos desde los ajustes del sistema.
 
-Si iniciaste sesión, conservamos tu copia en la nube mientras tu cuenta exista. Puedes solicitar en cualquier momento la eliminación de tu cuenta y de todos los datos asociados (rutinas, historial de racha, progreso y preferencias) escribiendo al correo de contacto abajo; la eliminaremos en un plazo razonable y te confirmaremos cuando se complete.
+Si iniciaste sesión, conservamos tu copia en la nube mientras tu cuenta exista. Puedes eliminar tu cuenta y todos los datos asociados (rutinas, historial de racha, progreso y preferencias) en cualquier momento, tú mismo, desde **Ajustes → Cuenta → Eliminar cuenta** dentro de la propia app: la eliminación es inmediata, tanto en nuestros servidores como en tu dispositivo, sin necesidad de escribirnos. Instrucciones detalladas, con capturas de pantalla, en nuestra [página de eliminación de datos](/es/legal/workout-tracker-data-deletion). También puedes solicitarlo por correo al contacto de abajo.
 
 ## 8. Menores de edad
 
@@ -86,6 +87,7 @@ Para preguntas sobre esta política, o para solicitar la eliminación de tus dat
 };
 
 export const workoutTrackerPrivacyEn: LegalDoc = {
+  kind: 'markdown',
   slug: 'workout-tracker-privacy-policy',
   locale: 'en',
   appName: 'Workout Tracker',
@@ -155,7 +157,7 @@ Synced data travels encrypted in transit (HTTPS) and is stored in tables with Ro
 
 If you never sign in, your data exists only on your device and disappears if you uninstall the app or clear its data from system settings.
 
-If you signed in, we keep your cloud copy for as long as your account exists. You can request deletion of your account and all associated data (routines, streak history, progress, and preferences) at any time by emailing the contact address below; we will delete it within a reasonable timeframe and confirm once done.
+If you signed in, we keep your cloud copy for as long as your account exists. You can delete your account and all associated data (routines, streak history, progress, and preferences) yourself, at any time, from **Settings → Account → Delete account** inside the app itself: deletion is immediate, both on our servers and on your device, with no need to email us. Step-by-step instructions with screenshots are on our [data deletion page](/en/legal/workout-tracker-data-deletion). You can also request it by emailing the contact address below.
 
 ## 8. Children's privacy
 

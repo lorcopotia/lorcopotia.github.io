@@ -80,6 +80,7 @@
     "viewCode": "View code",
     "viewDemo": "Live demo",
     "viewPolicy": "Privacy policy",
+    "viewDataDeletion": "Data deletion",
     "items": {
       "one": {
         "title": "Multi-cluster Kubernetes platform",

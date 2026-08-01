@@ -80,6 +80,7 @@
     "viewCode": "Ver código",
     "viewDemo": "Demo en vivo",
     "viewPolicy": "Política de privacidad",
+    "viewDataDeletion": "Eliminación de datos",
     "items": {
       "one": {
         "title": "Plataforma Kubernetes multi-clúster",

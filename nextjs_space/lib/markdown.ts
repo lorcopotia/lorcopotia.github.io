@@ -11,7 +11,7 @@ function escapeHtml(s: string): string {
     .replace(/'/g, '&#39;');
 }
 
-function renderInline(src: string): string {
+export function renderInline(src: string): string {
   let out = escapeHtml(src);
   // inline code
   out = out.replace(/`([^`]+)`/g, (_, code) => `<code>${code}</code>`);

@@ -273,6 +273,7 @@ export const projects = [
     codeUrl: 'https://github.com/lorcopotia/kubernetes-playground',
     demoUrl: null,
     policyUrl: null,
+    dataDeletionUrl: null,
   },
   {
     id: 'two',
@@ -280,6 +281,7 @@ export const projects = [
     codeUrl: 'https://github.com/lorcopotia/ansible-playground',
     demoUrl: null,
     policyUrl: null,
+    dataDeletionUrl: null,
   },
   {
     id: 'three',
@@ -287,6 +289,7 @@ export const projects = [
     codeUrl: 'https://github.com/lorcopotia',
     demoUrl: null,
     policyUrl: null,
+    dataDeletionUrl: null,
   },
   {
     id: 'four',
@@ -294,6 +297,7 @@ export const projects = [
     codeUrl: 'https://github.com/lorcopotia/terraform-playground',
     demoUrl: null,
     policyUrl: null,
+    dataDeletionUrl: null,
   },
   {
     id: 'five',
@@ -301,6 +305,7 @@ export const projects = [
     codeUrl: 'https://lorcopotia.github.io/kube-identity/',
     demoUrl: null,
     policyUrl: null,
+    dataDeletionUrl: null,
   },
   {
     id: 'workout-tracker',
@@ -308,5 +313,6 @@ export const projects = [
     codeUrl: null,
     demoUrl: null,
     policyUrl: '/legal/workout-tracker-privacy-policy',
+    dataDeletionUrl: '/legal/workout-tracker-data-deletion',
   },
 ] as const;

@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAllLegalParams, getLegalDoc } from '@/lib/legal';
 import { LegalDocView } from '@/components/legal/legal-doc-view';
+import { DeletionDocBody } from '@/components/legal/deletion-doc-body';
+import { MdxContent } from '@/components/mdx-content';
 import type { Locale } from '@/i18n/config';
 
 export function generateStaticParams() {
@@ -28,5 +30,13 @@ export default function LegalDocPage({
   const locale = (params?.locale ?? 'es') as Locale;
   const doc = getLegalDoc(locale, params?.slug);
   if (!doc) notFound();
-  return <LegalDocView locale={locale} doc={doc} />;
+  return (
+    <LegalDocView locale={locale} doc={doc}>
+      {doc.kind === 'deletion' ? (
+        <DeletionDocBody doc={doc} />
+      ) : (
+        <MdxContent source={doc.content} />
+      )}
+    </LegalDocView>
+  );
 }

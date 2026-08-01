@@ -1,13 +1,20 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { ArrowLeft, CalendarClock, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { MdxContent } from '@/components/mdx-content';
 import { SectionReveal } from '@/components/section-reveal';
-import type { LegalDoc } from '@/lib/legal';
 import type { Locale } from '@/i18n/config';
+
+type LegalDocHeaderInfo = {
+  appName: string;
+  title: string;
+  summary: string;
+  lastUpdated: string;
+  packageName?: string;
+};
 
 function formatDate(date: string, locale: Locale): string {
   try {
@@ -21,7 +28,15 @@ function formatDate(date: string, locale: Locale): string {
   }
 }
 
-export function LegalDocView({ locale, doc }: { locale: Locale; doc: LegalDoc }) {
+export function LegalDocView({
+  locale,
+  doc,
+  children,
+}: {
+  locale: Locale;
+  doc: LegalDocHeaderInfo;
+  children: ReactNode;
+}) {
   const t = useTranslations('Legal');
   const base = `/${locale}`;
 
@@ -68,7 +83,7 @@ export function LegalDocView({ locale, doc }: { locale: Locale; doc: LegalDoc })
         </SectionReveal>
 
         <SectionReveal delay={0.15} className="mt-10">
-          <MdxContent source={doc.content} />
+          {children}
         </SectionReveal>
       </div>
     </article>
