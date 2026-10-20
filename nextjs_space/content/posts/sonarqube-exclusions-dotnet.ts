@@ -4,6 +4,7 @@ const sharedTags = ['SonarQube', '.NET', 'Azure DevOps', 'DevSecOps'];
 
 export const sonarqubeExclusionsDotnetEs: Post = {
   slug: 'exclusiones-sonarqube-dotnet',
+  translationKey: 'sonarqube-exclusions-dotnet',
   locale: 'es',
   title: 'Guía de exclusiones de archivos en SonarQube para proyectos .NET',
   description:
@@ -77,6 +78,7 @@ Excluir bien no es esconder código: es dejar que el análisis se concentre en l
 
 export const sonarqubeExclusionsDotnetEn: Post = {
   slug: 'sonarqube-exclusions-dotnet',
+  translationKey: 'sonarqube-exclusions-dotnet',
   locale: 'en',
   title: 'SonarQube file exclusion guide for .NET projects',
   description:

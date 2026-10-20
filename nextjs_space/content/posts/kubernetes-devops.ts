@@ -4,6 +4,7 @@ const sharedTags = ['Kubernetes', 'DevOps', 'Openshift', 'Ansible'];
 
 export const kubernetesDevOpsEs: Post = {
   slug: 'kubernetes-devops-en-produccion',
+  translationKey: 'kubernetes-devops',
   locale: 'es',
   title: 'De cero a producción: Kubernetes para equipos DevOps',
   description:
@@ -60,6 +61,7 @@ La clave no es la herramienta, sino la disciplina operativa: código versionado,
 
 export const kubernetesDevOpsEn: Post = {
   slug: 'kubernetes-devops-in-production',
+  translationKey: 'kubernetes-devops',
   locale: 'en',
   title: 'From zero to production: Kubernetes for DevOps teams',
   description:

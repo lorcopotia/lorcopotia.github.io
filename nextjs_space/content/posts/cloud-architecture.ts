@@ -4,6 +4,7 @@ const sharedTags = ['Cloud', 'Terraform', 'GCP', 'Azure', 'IaC'];
 
 export const cloudArchitectureEs: Post = {
   slug: 'arquitectura-cloud-multicloud',
+  translationKey: 'cloud-architecture',
   locale: 'es',
   title: 'Arquitectura cloud multi-proveedor con Terraform',
   description:
@@ -66,6 +67,7 @@ La arquitectura multicloud no es más compleja por tener dos nubes, sino por ten
 
 export const cloudArchitectureEn: Post = {
   slug: 'multicloud-architecture-terraform',
+  translationKey: 'cloud-architecture',
   locale: 'en',
   title: 'Multi-cloud architecture with Terraform',
   description:

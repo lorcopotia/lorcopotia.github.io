@@ -9,7 +9,7 @@
 // plain `use-intl` provider.
 
 import { IntlProvider } from 'use-intl';
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 
 type Props = {
   locale: string;
@@ -19,6 +19,12 @@ type Props = {
 };
 
 export function I18nProvider({ locale, messages, timeZone, children }: Props) {
+  useEffect(() => {
+    if (typeof document !== 'undefined' && locale) {
+      document.documentElement.lang = locale;
+    }
+  }, [locale]);
+
   return (
     <IntlProvider
       locale={locale}

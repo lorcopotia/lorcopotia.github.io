@@ -158,9 +158,8 @@
     mask-image: radial-gradient(ellipse 60% 60% at 50% 0%, black, transparent 70%);
     -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 0%, black, transparent 70%);
   }
-
-  [data-hydration-error] { display: none !important; }
 }
+
 
 .prose-custom h1,
 .prose-custom h2,

@@ -4,6 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { Globe } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { locales, localeNames, type Locale } from '@/i18n/config';
+import { getAlternatePostSlug } from '@/lib/posts';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,8 +27,21 @@ export function LanguageSwitcher() {
     } else {
       segments.unshift(next);
     }
+
+    // Handle blog post slug translations
+    if (segments[1] === 'blog' && segments[2]) {
+      const altSlug = getAlternatePostSlug(currentLocale, segments[2], next);
+      if (altSlug) {
+        segments[2] = altSlug;
+      } else {
+        // Fallback to blog index if no translation exists for this slug
+        segments.splice(2, 1);
+      }
+    }
+
     router.push('/' + segments.join('/'));
   };
+
 
   return (
     <DropdownMenu>

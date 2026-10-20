@@ -5,6 +5,7 @@ import type { Locale } from './cv-data';
 
 export type Post = {
   slug: string;
+  translationKey: string;
   locale: Locale;
   title: string;
   description: string;
@@ -27,6 +28,20 @@ export function getPostBySlug(locale: Locale, slug: string): Post | undefined {
   return allPosts.find((p) => p.locale === locale && p.slug === slug);
 }
 
+export function getAlternatePostSlug(
+  locale: Locale,
+  slug: string,
+  targetLocale: Locale
+): string | undefined {
+  const current = getPostBySlug(locale, slug);
+  if (!current) return undefined;
+  const alternate = allPosts.find(
+    (p) => p.locale === targetLocale && p.translationKey === current.translationKey
+  );
+  return alternate?.slug;
+}
+
 export function getAllPostParams(): { locale: Locale; slug: string }[] {
   return allPosts.map((p) => ({ locale: p.locale, slug: p.slug }));
 }
+
