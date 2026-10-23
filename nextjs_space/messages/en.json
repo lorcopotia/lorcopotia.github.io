@@ -82,32 +82,37 @@
     "viewPolicy": "Privacy policy",
     "viewDataDeletion": "Data deletion",
     "items": {
-      "one": {
+      "01-postman-sonarqube": {
+        "title": "SonarQube Postman Collection & Automation Tool",
+        "description": "Zero-dependency Python tool that scans SonarQube instances (classic Web API & OpenAPI v2) to build a complete Postman Collection v2.1.0 with 520+ endpoints and secure environment variables.",
+        "tags": "Python, SonarQube, Postman, REST API"
+      },
+      "02-kubernetes-platform": {
         "title": "Multi-cluster Kubernetes platform",
         "description": "Installation and operation of Openshift 4.x clusters on-premise (VMware) and on Azure, with observability and automated backups.",
         "tags": "Openshift, Kubernetes, Azure, VMware"
       },
-      "two": {
+      "03-ansible-automation": {
         "title": "Automation with Ansible Tower",
         "description": "Task scheduling and infrastructure deployment with Ansible Tower: patching, backups, onboarding and operational runbooks.",
         "tags": "Ansible Tower, Python, Bash"
       },
-      "three": {
+      "04-azure-devops-cicd": {
         "title": "CI/CD pipelines on Azure DevOps",
         "description": "Code review, artifact builds and automated tests with SonarQube, custom agents and GitHub Copilot.",
         "tags": "Azure DevOps, SonarQube, Copilot"
       },
-      "four": {
+      "05-terraform-iac": {
         "title": "IaC with Terraform on public cloud",
         "description": "Reproducible deployments of networks, clusters and services on GCP and Azure with Terraform, reusable modules and PR review.",
         "tags": "Terraform, GCP, Azure, Bitbucket"
       },
-      "five": {
+      "06-kube-identity": {
         "title": "kube-identity",
         "description": "Kubernetes-focused identity project published on GitHub.",
         "tags": "Kubernetes, Go, OIDC, Identity"
       },
-      "workout-tracker": {
+      "07-workout-tracker": {
         "title": "Workout Tracker",
         "description": "Android app built with Flutter to create and run exercise routines, with daily streaks, rewards and optional sync via Google Sign-In and Supabase.",
         "tags": "Flutter, Dart, Supabase, Google Sign-In"

@@ -82,32 +82,37 @@
     "viewPolicy": "Política de privacidad",
     "viewDataDeletion": "Eliminación de datos",
     "items": {
-      "one": {
+      "01-postman-sonarqube": {
+        "title": "SonarQube Postman Collection & Automation Tool",
+        "description": "Herramienta en Python que escanea instancias de SonarQube (Web API clásica y OpenAPI v2) y genera automáticamente una colección Postman v2.1.0 completa con más de 520 endpoints y variables de entorno seguras.",
+        "tags": "Python, SonarQube, Postman, REST API"
+      },
+      "02-kubernetes-platform": {
         "title": "Plataforma Kubernetes multi-clúster",
         "description": "Instalación y operación de clústeres Openshift 4.x on-premise (VMware) y en Azure, con observabilidad y backups automatizados.",
         "tags": "Openshift, Kubernetes, Azure, VMware"
       },
-      "two": {
+      "03-ansible-automation": {
         "title": "Automatización con Ansible Tower",
         "description": "Programación de tareas y despliegue de infraestructura con Ansible Tower: parcheo, backups, onboarding y runbooks operativos.",
         "tags": "Ansible Tower, Python, Bash"
       },
-      "three": {
+      "04-azure-devops-cicd": {
         "title": "Pipelines CI/CD en Azure DevOps",
         "description": "Revisión de código, construcción de artefactos y pruebas automatizadas con SonarQube, agentes personalizados y GitHub Copilot.",
         "tags": "Azure DevOps, SonarQube, Copilot"
       },
-      "four": {
+      "05-terraform-iac": {
         "title": "IaC con Terraform en nube pública",
         "description": "Despliegue reproducible de redes, clústeres y servicios en GCP y Azure con Terraform, módulos reutilizables y revisión en PR.",
         "tags": "Terraform, GCP, Azure, Bitbucket"
       },
-      "five": {
+      "06-kube-identity": {
         "title": "kube-identity",
         "description": "Proyecto de identidad enfocado en Kubernetes publicado en GitHub.",
         "tags": "Kubernetes, Go, OIDC, Identity"
       },
-      "workout-tracker": {
+      "07-workout-tracker": {
         "title": "Workout Tracker",
         "description": "App Android en Flutter para crear y ejecutar rutinas de ejercicio, con racha diaria, recompensas y sincronización opcional vía Google Sign-In y Supabase.",
         "tags": "Flutter, Dart, Supabase, Google Sign-In"

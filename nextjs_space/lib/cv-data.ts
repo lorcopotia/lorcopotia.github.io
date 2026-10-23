@@ -268,7 +268,15 @@ export const education = {
 
 export const projects = [
   {
-    id: 'one',
+    id: '01-postman-sonarqube',
+    tags: ['Python', 'SonarQube', 'Postman', 'REST API'],
+    codeUrl: 'https://github.com/lorcopotia/postman-sonarqube-collection',
+    demoUrl: null,
+    policyUrl: null,
+    dataDeletionUrl: null,
+  },
+  {
+    id: '02-kubernetes-platform',
     tags: ['Openshift', 'Kubernetes', 'Azure', 'VMware'],
     codeUrl: 'https://github.com/lorcopotia/kubernetes-playground',
     demoUrl: null,
@@ -276,7 +284,7 @@ export const projects = [
     dataDeletionUrl: null,
   },
   {
-    id: 'two',
+    id: '03-ansible-automation',
     tags: ['Ansible Tower', 'Python', 'Bash'],
     codeUrl: 'https://github.com/lorcopotia/ansible-playground',
     demoUrl: null,
@@ -284,7 +292,7 @@ export const projects = [
     dataDeletionUrl: null,
   },
   {
-    id: 'three',
+    id: '04-azure-devops-cicd',
     tags: ['Azure DevOps', 'SonarQube', 'Copilot'],
     codeUrl: 'https://github.com/lorcopotia',
     demoUrl: null,
@@ -292,7 +300,7 @@ export const projects = [
     dataDeletionUrl: null,
   },
   {
-    id: 'four',
+    id: '05-terraform-iac',
     tags: ['Terraform', 'GCP', 'Azure', 'Bitbucket'],
     codeUrl: 'https://github.com/lorcopotia/terraform-playground',
     demoUrl: null,
@@ -300,7 +308,7 @@ export const projects = [
     dataDeletionUrl: null,
   },
   {
-    id: 'five',
+    id: '06-kube-identity',
     tags: ['Kubernetes', 'Go', 'OIDC', 'Identity'],
     codeUrl: 'https://lorcopotia.github.io/kube-identity/',
     demoUrl: null,
@@ -308,7 +316,7 @@ export const projects = [
     dataDeletionUrl: null,
   },
   {
-    id: 'workout-tracker',
+    id: '07-workout-tracker',
     tags: ['Flutter', 'Dart', 'Supabase', 'Google Sign-In'],
     codeUrl: null,
     demoUrl: null,
